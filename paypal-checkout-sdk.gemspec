@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.authors     = ["http://developer.paypal.com"]
   spec.email       = 'dl-paypal-checkout-api@paypal.com'
   spec.homepage    = 'https://github.com/paypal/Checkout-Ruby-SDK'
-  spec.license     = 'https://github.com/paypal/Checkout-Ruby-SDK/blob/master/LICENSE'
+  spec.license     = 'Apache-2.0'
 
   spec.files = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'paypalhttp', '~> 1.0.0'
+  spec.add_dependency 'paypalhttp', '~> 1.0.1'
 
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
